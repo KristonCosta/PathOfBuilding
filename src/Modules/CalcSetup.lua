@@ -449,7 +449,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 	else
 		env.modDB.parent = cachedPlayerDB
 		env.enemyDB.parent = cachedEnemyDB
-		if cachedMinionDB then
+		if cachedMinionDB and env.minion then
 			env.minion.modDB.parent = cachedMinionDB
 		end
 	end
