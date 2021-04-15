@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PoBVersion>
-	<Version number="2.1.0" platform="win32" branch="task/add-exsanguinate" repo="KristonCosta"/>
+	<Version number="exsanguinate" platform="win32" branch="task/add-exsanguinate" repo="KristonCosta"/>
 	<Source url="https://raw.githubusercontent.com/{repo}/PathOfBuilding/{branch}/runtime/" part="runtime" platform="win32"/>
 	<Source url="https://raw.githubusercontent.com/{repo}/PathOfBuilding/{branch}/src/" part="program"/>
 	<Source url="https://raw.githubusercontent.com/{repo}/PathOfBuilding/{branch}/src/" part="tree"/>
