@@ -6699,3 +6699,40 @@ skills["Reap"] = {
 		[20] = { 702, 1053, 1000, 87786, 15, 20, damageEffectiveness = 1.60, critChance = 6, levelRequirement = 70, manaCost = 46, statInterpolation = { 0, }, },
 	}
 }
+skills["Exsanguinate"] = {
+	name = "Exsanguinate",
+	color = 1,
+	baseEffectiveness = 1,
+	incrementalEffectiveness = 1,
+	description = "Exsanguinate",
+	skillTypes = { [SkillType.Spell] = true, [SkillType.Hit] = true, [SkillType.Duration] = true, [SkillType.SkillCanTotem] = true, [SkillType.SpellCanRepeat] = true, [SkillType.Triggerable] = true, [SkillType.PhysicalSkill] = true, [SkillType.DamageOverTime] = true, [SkillType.SkillCanMine] = true, [SkillType.Chaining] = true, },
+	statDescriptionScope = "debuff_skill_stat_descriptions",
+	castTime = 0.8,
+	baseFlags = {
+		spell = true,
+		chaining = true,
+		duration = true,
+	},
+	statMap = {},
+	baseMods = {
+		skill("debuff", true),
+		flag("SkillBloodMagic"),
+	},
+	qualityStats = {
+		Default = {
+			{ "skill_effect_duration_+%", 1.0 },
+		},
+	},
+	stats = {
+		"spell_minimum_base_physical_damage",
+		"spell_maximum_base_physical_damage",
+		"base_skill_effect_duration",
+		"base_physical_damage_to_deal_per_minute",
+		"is_area_damage",
+		"spell_damage_modifiers_apply_to_skill_dot",
+	},
+	levels = {
+		[1] = { 58, 87, 1000, 7212, damageEffectiveness = 1.80, critChance = 6, levelRequirement = 28, manaCost = 25, statInterpolation = { 0, }, },
+		[20] = { 807, 1211, 1000, 67266, damageEffectiveness = 1.80, critChance = 6, levelRequirement = 70, manaCost = 46, statInterpolation = { 0, }, },
+	}
+}

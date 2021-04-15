@@ -7437,4 +7437,22 @@ return {
 		reqInt = 100,
 		defaultLevel = 20,
 	},
+
+	["Metadata/Items/Gems/SkillGemExsanguinate"] = {
+		name = "Exsanguinate",
+		grantedEffectId = "Exsanguinate",
+		tags = {
+			strength = true,
+			active_skill = true,
+			spell = true,
+			duration = true,
+			physical = true,
+			chaining = true,
+		},
+		tagString = "Spell, Chaining, Physical, Duration",
+		reqStr = 100,
+		reqDex = 0,
+		reqInt = 100,
+		defaultLevel = 20,
+	},
 }
